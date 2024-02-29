@@ -1,0 +1,105 @@
+@media screen and (min-width: 902px){
+
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.32%;}
+    .col-5{width: 41.65%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.32%;}
+    .col-8{width: 66.65%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.32%;}
+    .col-11{width: 91.65%;}
+    .col-12{width: 100%;}
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav_logo{
+        text-align: left;
+        position: relative;
+        padding-top: 12px;
+    }
+    .nav_header{
+        text-align: center;
+        position: relative;
+        padding-top:20px;
+    }
+    .nav-menu ul{
+        text-align: right;
+    }
+    .nav-menu li{
+        display: inline-block;
+        background-color: transparent;
+    }
+    .nav-menu li a{
+        font-weight: normal;
+    }
+    }
+
+
+    @media screen and (max-width:902px) {
+        .weather-top{
+            width: 120px;
+            right: 100px;
+            transition: width 2s, transform 2s;
+        }
+        .weather-top:hover{
+            width: 140px;
+        }
+        .text-area h2{
+            padding-top: 25px;
+        }
+        .text-area p{
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .weather-bottom{
+            width: 120px;
+            left: 100px;
+            transition: width 2s, transform 2s;
+        }
+        .weather-bottom:hover{
+            width: 140px;
+        }
+        /* *abouit me  */
+        .about-flexbox{
+            flex-direction: column;
+        }
+        .about-text p{
+            text-align: center;
+        }
+        /* *professional */
+        .professional{
+            flex-direction: column;
+            padding: 10px;
+        }
+        .professional-card{
+            margin: 5px;
+        }
+        .card-title h2{
+            font-size: 2.5rem;
+        }
+        .achievement{
+            grid-template-columns: 1fr;
+            padding: 10px 50px;
+        }
+        .font-awesome{
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        } 
+        /* *footer area */
+        .footer{
+            grid-template-columns: 1fr;
+        }
+        .footer-menu ul li{
+            display: block;
+        }
+        /* .footer-menu ul{
+            flex-direction: column;
+        }  */   
+    }

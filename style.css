@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Satisfy', cursive; */
+}
+
+h1{
+    font-size: 3rem;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Single Day', cursive;
+}
+h2{
+    font-size: 2.5rem;
+    font-family: 'Single Day', cursive;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.dottet-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    width: 80px;
+    margin: 10px auto;
+}
+p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    text-align: center;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background:#40868b ;
+    padding: 1% 7%;
+    text-align: center;
+}
+.nav_logo{
+    margin: 0 auto;
+}
+.nav_header{
+    margin: 0 auto;
+}
+.nav-menu li{
+    margin: 30px auto;
+    background:  #0c6168;
+    border-radius: 6px;
+    padding: 6px;
+}
+.nav-menu li a{
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.nav-menu li:hover{
+    background: aqua;
+}
+.nav-menu li:hover a{
+    color: black;
+    cursor: pointer;
+}
+
+/* profile style */
+.profile{
+    padding: 130px 20px;
+    text-align: center ;
+    position: relative;
+}
+.weather-top{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    transition: transform 2s;
+}
+.weather-top:hover{
+    transform: rotate(360deg);
+}
+
+.text-area h2{
+    color: #040e04;
+}
+
+.text-area p{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.weather-bottom{
+    position: absolute;
+    left: 60px;
+    transition: transform 2s;
+}
+.weather-bottom:hover{
+    transform: rotate(360deg);
+}
+.profile::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* *about me */
+.aboutme{
+    background: #39a4ac;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.about-flexbox{
+    display: flex;
+    justify-content:space-around;
+}
+.about-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-images img{
+    width: 250px;
+    height: 270px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.about-text {
+    margin: 30px 20px;
+}
+.about-text p{
+    text-align: left;
+    margin: 20px 0;
+}
+.about-button{
+    font-size: 16px;
+    background: #040e04;
+    padding: 10px ;
+    display: inline-block;
+    margin: 20px 0 0;
+    border-radius: 10px;
+}
+.about-button:hover{
+    background: #b12209;
+}
+
+/* *professional experience */
+.professional{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.professional-card{
+    flex-basis: 31%;
+    background-color: #a39e9e;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px ;
+    box-shadow: 0 8px 5px 5px #00000086;
+}
+
+.professional-card:hover{
+    box-shadow: 0 8px 5px 6px black;
+    transition: 2s;
+}
+
+.border-circle{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.skillss img{
+    width: 105px;
+    height: 105px;
+}
+
+.card-title h2{
+    background: #616161;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.card-desc{
+    padding: 20px;
+    text-align: left;
+}
+
+.card-desc li{
+    padding: 5px;
+}
+
+/* .professional::after{
+    content: '';
+    display: table;
+    clear: both;
+} */
+
+/* *achievement area */
+.achievement{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #39a4ac;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.description p{
+    text-align: left;
+    padding:10px;
+    line-height: 30px;
+}
+
+.description input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    resize: none;
+}
+
+.form-button{
+    margin: 30px 10px;
+}
+
+.form-button button{
+    background: #1c1c1c;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.form-button button:hover{
+    background: #d11c1ce0;
+}
+
+.font-awesome button{
+    font-size: 32px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.font-awesome button:hover{
+    background: #a39e9e;
+}
+.font-awesome{
+    padding-top: 50px;
+}
+
+.achievement h2{
+    font-size: 1.8rem;
+}
+
+/* *Footer area */
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    text-align: center;
+    background: #040e04;
+    color: white;
+}
+
+/* *!i can use flex or inline property
+*.footer-menu ul{
+    display: flex;
+    justify-content: center;
+} */
+
+.footer-menu ul li{
+    display: inline-block;
+    margin: 5px;
+}
+.footer-menu ul li a{
+    text-transform: uppercase;
+    font-weight: normal;
+    cursor: pointer;
+}
+.footer-menu ul li a:hover{
+    color: blue;
+}
+.footer-menu ul li a{
+    text-transform: uppercase;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.footer-copyright{
+    text-align: center;
+}
+.footer-copyright p{
+    font-size: 12px;
+    padding-top: 5px;
+}
